@@ -1,0 +1,138 @@
+.stat-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-top: 4px solid;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.2),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.theme-blue {
+  border-top-color: #3b82f6;
+}
+.theme-green {
+  border-top-color: #10b981;
+}
+.theme-orange {
+  border-top-color: #f59e0b;
+}
+.theme-red {
+  border-top-color: #ef4444;
+}
+
+.theme-blue .card-title {
+  color: #60a5fa;
+}
+.theme-green .card-title {
+  color: #34d399;
+}
+.theme-orange .card-title {
+  color: #fbbf24;
+}
+.theme-red .card-title {
+  color: #f87171;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.card-count {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.card-bottom {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.details-toggle {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+}
+
+.details-toggle:hover {
+  color: #e2e8f0;
+}
+
+.details-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-height: 150px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+/* Custom scrollbar for details grid */
+.details-grid::-webkit-scrollbar {
+  width: 4px;
+}
+.details-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+.details-grid::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.char-badge {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 0.2rem 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: #e2e8f0;
+}
+
+.char-badge .char {
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.char-badge .freq {
+  color: #94a3b8;
+  font-size: 0.8rem;
+}
+
+.no-chars {
+  font-size: 0.85rem;
+  color: #64748b;
+  font-style: italic;
+}
