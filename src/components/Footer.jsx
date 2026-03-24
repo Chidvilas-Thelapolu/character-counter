@@ -10,7 +10,7 @@ const Footer = () => {
         <span className="dot">•</span>
         <span className="creator-name">T.Jaswanth</span>
         <span className="dot">•</span>
-        <span className="creator-name">Sd.Shifa sultana</span>
+        <span className="creator-name">Sd.Shifa Sultana</span>
       </div>
     </footer>
   );
